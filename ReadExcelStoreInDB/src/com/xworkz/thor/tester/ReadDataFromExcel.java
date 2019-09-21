@@ -52,6 +52,7 @@ public class ReadDataFromExcel {
 			System.out.println(std.getId() + " " + std.getName() + " " + std.getAddress());
 			session.saveOrUpdate(std);
 			t.commit();
+			System.out.println("commited sucessfully");
 		}
 		file.close();
 	}
